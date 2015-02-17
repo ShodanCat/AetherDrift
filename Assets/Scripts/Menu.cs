@@ -70,7 +70,7 @@ public class Menu : MonoBehaviour
 	{
 		if(GUI.Button (new Rect(Screen.width / 2.0f - 100, Screen.height / 3.0f + 50, 200, 50), "Start Game"))
 		{
-			Application.LoadLevel("Level 1");
+			Application.LoadLevel("intro cutscene");
 		}
 
 		if(GUI.Button (new Rect(Screen.width / 2.0f - 100, Screen.height / 3.0f + 275, 200, 50), "Back"))

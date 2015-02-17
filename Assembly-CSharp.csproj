@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{F7D6857A-658A-4CD2-B1C4-5C189C26CE4C}</ProjectGuid>
+	<ProjectGuid>{B82A639B-C6E4-2634-0A60-1FA6BA0AE976}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Character Controllers\Sources\Scripts\LoadOnSpace.cs" />
      <Compile Include="Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\FlashingLight.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
