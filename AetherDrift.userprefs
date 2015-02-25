@@ -1,6 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Character Controllers/Sources/Scripts/FPSInputController.cs">
+    <Files>
+      <File FileName="Assets/Character Controllers/Sources/Scripts/FPSInputController.cs" Line="23" Column="52" />
+      <File FileName="Assets/Character Controllers/Sources/Scripts/CharacterMotor.cs" Line="204" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

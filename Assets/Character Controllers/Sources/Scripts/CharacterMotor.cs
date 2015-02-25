@@ -29,7 +29,7 @@ public class CharacterMotor : MonoBehaviour
     public class CharacterMotorMovement
     {
         // The maximum horizontal speed when moving
-        public float maxForwardSpeed = 3.0f;
+        public float maxForwardSpeed = 6.0f;
         public float maxSidewaysSpeed = 2.0f;
         public float maxBackwardsSpeed = 2.0f;
 
@@ -234,7 +234,7 @@ public class CharacterMotor : MonoBehaviour
         // We always want the movement to be framerate independent.  Multiplying by Time.deltaTime does this.
         Vector3 currentMovementOffset = velocity * Time.deltaTime;
 
-        // Find out how much we need to push towards the ground to avoid loosing grouning
+        // Find out how much we need to push towards the ground to avoid losing grounding
         // when walking down a step or over a sharp change in slope.
         float pushDownOffset = Mathf.Max(controller.stepOffset, new Vector3(currentMovementOffset.x, 0, currentMovementOffset.z).magnitude);
         if(grounded)
