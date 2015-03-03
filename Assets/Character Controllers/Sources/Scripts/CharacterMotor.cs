@@ -9,6 +9,8 @@ using System.Collections.Generic;
 
 public class CharacterMotor : MonoBehaviour
 {
+	Animator anim;
+
     // Does this script currently respond to input?
     bool canControl = true;
     bool useFixedUpdate = true;
@@ -193,6 +195,7 @@ public class CharacterMotor : MonoBehaviour
     void Awake()
     {
         controller = GetComponent<CharacterController>();
+		anim = GetComponent<Animator>();
         tr = transform;
     }
 
@@ -200,6 +203,9 @@ public class CharacterMotor : MonoBehaviour
     {
         // We copy the actual velocity into a temporary variable that we can manipulate.
         Vector3 velocity = movement.velocity;
+
+		// Put the velocity's current magnitude into a variable used for animations
+		anim.SetFloat("Speed", movement.velocity.magnitude);
 
         // Update velocity based on input
         velocity = ApplyInputVelocityChange(velocity);
