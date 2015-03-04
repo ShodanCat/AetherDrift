@@ -206,6 +206,7 @@ public class CharacterMotor : MonoBehaviour
 
 		// Put the velocity's current magnitude into a variable used for animations
 		anim.SetFloat("Speed", movement.velocity.magnitude);
+		anim.SetBool ("Jumping", IsJumping());
 
         // Update velocity based on input
         velocity = ApplyInputVelocityChange(velocity);
