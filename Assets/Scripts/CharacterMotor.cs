@@ -204,8 +204,12 @@ public class CharacterMotor : MonoBehaviour
         // We copy the actual velocity into a temporary variable that we can manipulate.
         Vector3 velocity = movement.velocity;
 
+		// Create a horizontal component of character velocity used for running/walking animations
+		Vector3 horizontalVelocity = controller.velocity;
+		horizontalVelocity = new Vector3(controller.velocity.x, 0, 0);
+
 		// Put the velocity's current magnitude into a variable used for animations
-		anim.SetFloat("Speed", movement.velocity.magnitude);
+		anim.SetFloat("Speed", horizontalVelocity.magnitude);
 		anim.SetBool ("Jumping", IsJumping());
 
         // Update velocity based on input
