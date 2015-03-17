@@ -54,6 +54,8 @@
      <Compile Include="Assets\Scripts\LoadOnSpace.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\SelectObject.cs" />
+     <Compile Include="Assets\Scripts\StartTerminal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
